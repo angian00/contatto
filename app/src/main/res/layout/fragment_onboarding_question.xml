@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/onboarding_question"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/midnight_blue"
+    tools:context=".ui.onboarding.OnboardingActivity">
+
+    <TextView
+        android:id="@+id/question_text"
+        android:labelFor="@+id/answer_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="40dp"
+        android:lineSpacingMultiplier="1.2"
+        android:padding="16dp"
+        tools:text="Prova"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/onboarding_question" />
+
+    <EditText
+        android:id="@+id/answer_edit"
+        android:autofillHints="Type your answer here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:textAlignment="center"
+        android:inputType="textPersonName"
+        android:textSize="32sp"
+        android:textColor="@color/off_white"
+        android:background="@drawable/edittext_outline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/answer_button"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/button_shape"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/answer_action"
+        />
+
+    <ImageView
+        android:id="@+id/answer_photo_thumbnail"
+        android:contentDescription="@string/my_photo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars"
+        android:adjustViewBounds="true"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+         />
+
+    <LinearLayout
+        android:id="@+id/answer_choice_multi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CheckBox
+            android:id="@+id/choice_multi_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="CheckBox"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/off_white"
+            android:theme="@style/CustomCheckBox"
+            />
+
+        <CheckBox
+            android:id="@+id/choice_multi_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="CheckBox"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/off_white"
+            android:theme="@style/CustomCheckBox"
+            />
+
+        <CheckBox
+            android:id="@+id/choice_multi_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="CheckBox"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/off_white"
+            android:theme="@style/CustomCheckBox"
+            />
+
+        <CheckBox
+            android:id="@+id/choice_multi_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="CheckBox"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/off_white"
+            android:theme="@style/CustomCheckBox" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/answer_choice_single"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/choice_single_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:theme="@style/CustomRadioButton"
+            android:textColor="@color/off_white"
+            />
+
+        <RadioButton
+            android:id="@+id/choice_single_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:theme="@style/CustomRadioButton"
+            android:textColor="@color/off_white"
+            />
+
+        <RadioButton
+            android:id="@+id/choice_single_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:theme="@style/CustomRadioButton"
+            android:textColor="@color/off_white"
+            />
+
+        <RadioButton
+            android:id="@+id/choice_single_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:theme="@style/CustomRadioButton"
+            android:textColor="@color/off_white"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="@string/next"
+        android:theme="@style/CustomButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

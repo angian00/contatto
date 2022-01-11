@@ -1,0 +1,46 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Contatto" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="android:textColor">@color/off_white</item>
+    </style>
+
+    <style name="CustomButton" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@android:drawable/btn_default
+        </item><!-- only way to change this is to change the src image -->
+    </style>
+
+    <style name="CustomRadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="colorControlNormal">@color/off_white</item>
+        <item name="colorControlActivated">@color/off_white</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="CustomCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="colorControlNormal">@color/off_white</item>
+        <item name="colorControlActivated">@color/off_white</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Theme.Contatto.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Contatto.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Contatto.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

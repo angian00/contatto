@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Contatto!</string>
+    <string name="logo_description">App Logo</string>
+    <string name="register_mobile_number">Register with mobile number</string>
+
+    <string name="question_name">My first name is</string>
+
+    <string name="question_gender">I am a</string>
+    <string name="gender_male">man</string>
+    <string name="gender_female">woman</string>
+    <string name="gender_nonbinary">nonbinary person</string>
+
+    <string name="question_interests">I am interested in</string>
+    <string name="interest_male">men</string>
+    <string name="interest_female">women</string>
+    <string name="interest_nonbinary">nonbinary people</string>
+
+    <string name="question_email">My email is</string>
+    <string name="question_description">This is me in one sentence</string>
+    <string name="question_birthday">My birthday is on</string>
+    <string name="question_photo">Here is how I look</string>
+    <string name="answer_action">Answer action</string>
+    <string name="my_photo">My photo</string>
+
+    <string name="question_location">I am here</string>
+
+    <string name="next">Continue</string>
+
+    <string name="onboarding_error_desc_too_short">Description must be at least %1$d chars long</string>
+    <string name="onboarding_error_desc_too_long">Description must be at most %1$d chars long</string>
+    <string name="onboarding_error_birthday_missing">Birthday field must be filled in</string>
+    <string name="onboarding_error_birthday_invalid">Birthday is invalid</string>
+    <string name="onboarding_error_birthday_under_18">You must be over 18 to use this app</string>
+    <string name="onboarding_error_description_missing">Description field must be filled in</string>
+    <string name="onboarding_error_email_missing">Email field must be filled in</string>
+    <string name="onboarding_error_email_invalid">Email address is invalid</string>
+    <string name="onboarding_error_gender_missing">An option must be selected</string>
+    <string name="onboarding_error_interests_missing">Some option must be selected</string>
+    <string name="onboarding_error_location_missing">Location permission must be allowed</string>
+    <string name="onboarding_error_name_missing">Name field must be filled in</string>
+    <string name="onboarding_error_photo_failed">Could not take photo</string>
+    <string name="onboarding_error_photo_missing">Photo is not available</string>
+
+    <string name="chat">Chat</string>
+    <string name="profile">Your profile</string>
+    <string name="matching">Find matches</string>
+
+    <string name="wait_matching">Please wait while we find some people for you</string>
+    <string name="next_proposed_contact">Next proposed contact</string>
+    <string name="skipping">Skipping</string>
+    <string name="liking">Liking</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="unregister">Unregister</string>
+    <string name="end_of_stack">Sorry, no more contacts for you</string>
+    <string name="profile_gender">I am a %1$s</string>
+    <string name="profile_interests">I am interested in %1$s</string>
+    <string name="profile_birthday">I was born on %1$s</string>
+
+</resources>
